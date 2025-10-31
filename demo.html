@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css">
+
+</head>
+
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li class="code">
+                    <h1>Coding Lab</h1>
+
+                </li>
+                
+                    
+                <li class="tab"><a href="#"><i class="fa-solid fa-house "
+                            style="color: #ffffff;position: relative; top: -2px;"></i>&nbsp;Home</a></li>
+                <li class="tab"><a href="#"><i class="fa-solid fa-shopping-bag "
+                            style="color: #ffffff;position: relative; top: -2px;"></i>&nbsp;Product</a></li>
+                <li class="tab"><a href="#"><i class="fa-solid fa-gear "
+                            style="color: #ffffff;position: relative; top: -2px;"></i>&nbsp;Services</a></li>
+                <li class="tab"><a href="#"><i class="fa-solid fa-headset "
+                            style="color: #ffffff;position: relative; top: -2px;"></i>&nbsp;Contact</a></li>
+                            
+                <li class="button"><input type="button" value="Login" id="nav-login"></li>
+
+
+            </ul>
+        </nav>
+
+        <div id="page">
+            <form>
+                <h1>Login</h1>
+                <input type="email" placeholder="Username" id="email" required>
+                <br><br>
+                
+                <input type="password" placeholder="Password" id="password" required>
+                <br>
+                <span class="size" id="checkbox-span"><input type="checkbox" id="checkbox">Remember me</span>
+                <a href="#" class="size" id="pass" re>Forgot password?</a>
+                <br><br>
+                <input type="button" value="Login Now" onclick="login()" id="login-btn">
+                <br><br>
+                <span class="size" id="sign">Not a Member?</span><a href="#" class="size" id="Now">SignUp Now</a>
+            </form>
+
+        </div>
+
+        <div id="popup" class="overlay">
+            <div id="success" class="content">
+                <span id="notice">Notice.!</span>
+                <hr>
+                <span id="close" class="close-btn">&times;</span>
+
+                <p> Successfully Login!</p>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="demo.js"></script>
+
+</body> 
+
+</html>
