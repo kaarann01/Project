@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+    color: black;
+    line-height: 1.5;
+}
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.siteheader
+{
+    background-color: antiquewhite;
+    border-bottom: 1px solid lightgray;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    gap:1rem;
+}
+.logo{
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+}
+.nav-link{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.95rem;
+}
+.nav-link a{
+    text-decoration: none;
+    color: black;
+}
+.nav-cta{
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+@media (max-width:768px)
+{
+    .nav{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .nav-link{
+    display: none;
+  
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header class="siteheader">
+        <div class="container nav">
+            <div class="logo">ABC</div>
+            <nav class="nav-link">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Service</a>
+            </nav>
+            <button class="nav-cta">Sign-up</button>
+        </div>
+    </header>
+</body>
+
+</html>
